@@ -18,14 +18,22 @@ Matérias que o professor irá aplicar.
 
 ## Mapa de intent (exemplo de gatilho, variáveis e retorno esperado)
 #### HorarioIntent:
-gatilho: "Qual o horario do sexto período"
+gatilho: "Qual o horario do sexto período" 
+#####
 variaveis: horario, periodo
+#####
 retorno: "As materias disponiveis para este periodo são: "
+#####
 #### MateriaIntent:
 gatilho: "Qual o horario do da materia x?"
+#####
 variaveis: materia, diaDaSemana, professor
+#####
 retorno: "O horario de {} é na(o) {} com a(o) professor(a) {}", materia, diaDaSemana, professor
+#####
 #### ProfessorIntent:
 gatilho: "Que matéria o professor {} dá?", "Que dia o professor {} dá aula?"
+#####
 variaveis: professor, materia, diaDaSemana
+#####
 retorno: "O professor(a) {} dá aula(s) de {} na {}, [...]", professor, materia, diaDaSemana
